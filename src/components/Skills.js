@@ -2,8 +2,8 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { 
-  FaReact, FaNodeJs, FaPython, FaDatabase, FaAws, FaDocker,
-  FaGitAlt, FaHtml5, FaCss3Alt, FaJs, FaBootstrap, FaFigma
+  FaReact, FaNodeJs, FaPython, FaAws, FaDocker,
+  FaGitAlt, FaHtml5, FaCss3Alt, FaBootstrap
 } from 'react-icons/fa';
 import { SiTypescript, SiMongodb, SiPostgresql, SiFirebase, SiVercel, SiTailwindcss } from 'react-icons/si';
 
