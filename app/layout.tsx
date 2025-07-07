@@ -58,6 +58,11 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
+  other: {
+    'google-site-verification': 'LDyakNbxDtNSrmiHmAH3LRjyPeUXRhkQBkZatxdycR4', // ← यहाँ अपना कोड डालें
+
+    
+  },
 };
 
 export default function RootLayout({
