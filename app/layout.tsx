@@ -19,9 +19,45 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const siteUrl = "https://sanju-bisone.vercel.app/"; // ⚠️ अपनी असली वेबसाइट का URL यहाँ डालें
+
 export const metadata: Metadata = {
-  title: "Sanju Bisone",
+  metadataBase: new URL(siteUrl),
+  title: {
+    default: "Sanju Bisone | Freelance Web Developer in Betul, MP",
+    template: `%s | Sanju Bisone`,
+  },
   description: "Sanju Bisone is a freelance web developer based in Betul, MP, specializing in modern, responsive website design, smooth animations, and payment integration. Expert in creating high-performance websites tailored for small businesses.",
+  keywords: ["freelance web developer", "web developer Betul", "Sanju Bisone", "MERN stack", "Next.js", "React", "portfolio", "website development"],
+  authors: [{ name: 'Sanju Bisone', url: siteUrl }],
+  creator: 'Sanju Bisone',
+  
+  openGraph: {
+    title: 'Sanju Bisone | Freelance Web Developer',
+    description: 'Passionate web developer from Betul, MP, creating exceptional digital experiences.',
+    url: siteUrl,
+    siteName: 'Sanju Bisone Portfolio',
+    images: [
+      {
+        url: '/sanju.jpg', // `public` फोल्डर में एक 1200x630px की इमेज डालें
+        width: 1200,
+        height: 630,
+        alt: 'Sanju Bisone - Web Developer',
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Sanju Bisone | Freelance Web Developer',
+    description: 'Passionate web developer from Betul, MP, creating exceptional digital experiences.',
+    images: ['/og-image.jpg'],
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({
