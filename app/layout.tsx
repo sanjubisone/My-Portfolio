@@ -52,7 +52,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Sanju Bisone | Freelance Web Developer',
     description: 'Passionate web developer from Betul, MP, creating exceptional digital experiences.',
-    images: ['/og-image.jpg'],
+    images: ['/sanju.jpg'], // Using the same image as openGraph for consistency
   },
   robots: {
     index: true,
